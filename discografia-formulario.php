@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App-Spotify</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
 </head>
 <body class="bg-info">
+    <main class="container">
+    <?php include "inc-menu.php";?>
     <div class="container py-5 bg-light rounded">
         <h1 class="mb-4 text-center">Cadastro de Discografia</h1>
 
@@ -49,8 +53,7 @@
             </div>
         </form>
     </div>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2026 Diego Nunes <a href="mailto:diego_nunes_23@hotmail.com" class="text-white">Diego_nunes_23@hotmail.com <br></a> Todos os direitos reservados.</p>
-    </footer>
+</main>
+<?php include "inc-rodape.php";?>
 </body>
 </html>

@@ -5,10 +5,7 @@ $ano = $_POST['ano'];
 $tipo = $_POST['tipo'];
 $foto = $_POST['foto'];
 
-$conexao = mysqli_connect("localhost", "root", "", "db_spotify");
-if(!$conexao){
-    die("<h3>Erro</h3>" . mysqli_connect_error());
-}
+include "inc-conexao.php";
 
 $sql = "INSERT INTO tb_discografia(artista, nome, ano, tipo, foto) values('$artista', '$nome', $ano, '$tipo', '$foto')";
 
@@ -21,7 +18,5 @@ if($resultado){
 }
 
 mysqli_close($conexao);
-
-
 
 ?>
