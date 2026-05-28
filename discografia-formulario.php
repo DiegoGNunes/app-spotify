@@ -42,7 +42,7 @@
 
                     <div class="mb-3">
                         <label for="foto" class="form-label">Foto</label>
-                        <input type="file" id="foto" name="foto" class="form-control" required>
+                        <input type="url" id="foto" name="foto" class="form-control" required>
                     </div>
 
                     <div class="d-flex gap-2">

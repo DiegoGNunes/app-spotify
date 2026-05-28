@@ -8,8 +8,9 @@
         <link href="style.css" rel="stylesheet">
 </head>
 <body>
+     <?php include "inc-menu.php";?>
     <main class="container">
-    <?php include "inc-menu.php";?>
+   
     <h1>Listagem de Discografias</h1>
     <div class="row">
         <div class="col">
@@ -19,7 +20,7 @@
 
     <div class="row">
         <div class="col">
-            <table>
+            <table class="table table-primary table-bordered border-primary ">
                 <tr>
                     <td>ID</td>
                     <td>Artista</td>
@@ -37,7 +38,10 @@
                     echo"<tr>";
                     echo"<td> {$linha_resultado['id']} </td>";
                     echo"<td> {$linha_resultado['artista']} </td>";
-                    echo"<td> {$linha_resultado['nome']} </td>";
+
+                    echo"<td> <a href='discografia-visualizar.php?id={$linha_resultado['id']}'> {$linha_resultado['nome']} </td>";
+
+
                     echo"<td> {$linha_resultado['ano']} </td>";
                     echo"<td> {$linha_resultado['tipo']} </td>";
 
