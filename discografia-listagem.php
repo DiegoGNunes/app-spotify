@@ -27,6 +27,7 @@
                     <td>Nome do álbum</td>
                     <td>Ano</td>
                     <td>Tipo</td>
+                    <td>Ações</td>
 
                 </tr>
                 <?php include "inc-conexao.php";
@@ -44,7 +45,15 @@
 
                     echo"<td> {$linha_resultado['ano']} </td>";
                     echo"<td> {$linha_resultado['tipo']} </td>";
+                    echo"<td>
 
+                    <a href='discografia-excluir.php?id={$linha_resultado['id']}'>Excluir</a>
+
+                    <a href='discografia-editar.php?id={$linha_resultado['id']}'>Editar</a>
+                    
+                    </td>";
+                    echo "</tr>";
+                
                 }
                 mysqli_close($conexao);
                 ?>
