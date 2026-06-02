@@ -26,6 +26,7 @@ while($linha = mysqli_fetch_assoc($resultado)){
     <?php include "inc-menu.php";?>
     <main class="container mt-5">
         <h1>Visualizar Discografia</h1>
+        <!-- <?=$nome; ?> essa sintaxe é uma forma curta de exibir uma variável PHP dentro do HTML. -->
         <img src="<?=$foto; ?>" class="img-fluid" alt="<?=$nome; ?>"> <br>
         Artista:  <?=$artista; ?>  <br>
         Nome do álbum:  <?=$nome; ?> <br>

@@ -14,6 +14,7 @@
     <div class="container py-5 bg-light rounded">
         <h1 class="mb-4 text-center">Cadastro de Discografia</h1>
 
+        <!-- Aqui nós fazemos o link com a página de php que usamos para salvar as discografias usando o método post, que é para enviar informações. -->
         <form action="discografia-salvar.php" method="post">
             <div class="row justify-content-center">
                 <div class="col-md-6">
