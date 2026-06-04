@@ -3,3 +3,26 @@ nav a{
     margin: 2px;
     text-decoration: none;
 }
+.cartao{
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s ease-in;
+}
+
+.cartao:hover{
+    transform: translateX(5px) translateY(-5px);
+}
+.cor-cartao{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(0, 0, 0, 0.411);
+    height: 350px;
+    color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: end;
+}
